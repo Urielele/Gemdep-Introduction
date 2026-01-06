@@ -107,8 +107,8 @@ define gui.textbox_yalign = 1.0
 
 
 ## Penempatan nama karakter yang berbicara, hampir sama dengan kotak text. 
-define gui.name_xpos = 220
-define gui.name_ypos = -275
+define gui.name_xpos = 340
+define gui.name_ypos = -200
 
 ## Penempatan  horizontal nama karakter. Ini dapat berupa 0.0 untuk rata kiri,
 ## 0.5 untuk rata tengah, dan 1.0 untuk rata kanan. 
@@ -130,8 +130,8 @@ define gui.namebox_tile = False
 ## Penempatan dialog itu relatif pada kotaktext. Ini dapat berisi angka dari
 ## pixel yang relativ mulai dari sisi kiri sampai atas dari kotaknama, atau 0.5
 ## untuk tengah.
-define gui.dialogue_xpos = 140
-define gui.dialogue_ypos = -120
+define gui.dialogue_xpos = 240
+define gui.dialogue_ypos = -80
 
 ## Lebar maximum dari dialog text, dalam pixel.
 define gui.dialogue_width = 1116
