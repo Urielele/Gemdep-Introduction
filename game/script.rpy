@@ -8,7 +8,8 @@ image bg makoto_no_suit = "images/b1_1_1.png"
 image bg Razaan = "images/Frame 1.png"
 image bg Haidar = "images/Haidar.png"
 image bg Djerico = "images/Frame 3.png"
-image bg landmark = "images/landmark.png"
+image bg landmark = "images/bg/landmark.png"
+image bg omori = "images/bg/omori.png"
 
 #pake kyk gini aja kak buat sprite
 image define bimo = "images/b1_1_1.png"
@@ -33,8 +34,9 @@ label start:
     hai "Hai gueh haidar beredar"
     scene bg Djerico with dissolve
     dje "Hai gueh djerico dari tekkim"
-    scene bg landmark with dissolve
+    scene bg omori with dissolve
     show b1_1_1
-    bim "hai gueh Bimo."
+    bim "hai gueh Bimo gueh suka OMORI."
+    bim "gueh Teknik Informatika angkatan '24."
     faj "hai gueh fajri."
     return

@@ -271,7 +271,7 @@ style quick_button_text is button_text
 
 style quick_menu:
     xalign 0.5
-    yalign 0.975
+    yalign 0.92
 
 style quick_button:
     properties gui.button_properties("quick_button")
