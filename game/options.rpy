@@ -18,7 +18,7 @@ define config.name = _("Gemdep Introduction")
 ## Meng determinasikan apakah judul yang di berikan di atas di tampilkan di menu
 ## utama. Set ini ke False untuk menyembunyikan judul.
 
-define gui.show_name = True
+define gui.show_name = False
 
 
 ## Versi Permainan.

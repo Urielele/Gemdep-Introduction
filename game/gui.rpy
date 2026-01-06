@@ -26,21 +26,21 @@ define config.check_conflicting_properties = True
 ## Warna text pada antarmuka.
 
 ## Warna aksen yang digunakan sepanjang interface sampai pewarnaan text.
-define gui.accent_color = '#99ccff'
+define gui.accent_color = '#594100'
 
 ## Warna yang di gunakan untuk warna tombol text jika di pilih atau di tekan.
-define gui.idle_color = '#888888'
+define gui.idle_color = '#000000'
 
 ## Warna kecil yang di gunakan untuk text kecil, yang membutuhkan lebih terang/
 ## lebih gelap untuk mencapai efek yang sama
 define gui.idle_small_color = '#aaaaaa'
 
 ## Warna yang di gunakan untuk tombol dan bar yang di pilih.
-define gui.hover_color = '#c1e0ff'
+define gui.hover_color = '#750000'
 
 ## Warna yang digunakan untuk text tombol ketika di pijit tapi tidak di fokus.
 ## Tombol di pilih jika terdapat di layar saat ini atau value preferensi.
-define gui.selected_color = '#ffffff'
+define gui.selected_color = '#0e006a'
 
 ## Warna yang di gunakan untuk tombol text ketika tidak bisa di pilih.
 define gui.insensitive_color = '#8888887f'
@@ -53,7 +53,7 @@ define gui.hover_muted_color = '#5b7a99'
 
 ## Warna yang di gunakan untuk dialog dan text pilihan menu.
 define gui.text_color = '#ffffff'
-define gui.interface_text_color = '#ffffff'
+define gui.interface_text_color = '#000000'
 
 
 ## Font dan ukuran Font ########################################################
@@ -189,7 +189,7 @@ define gui.confirm_button_text_xalign = 0.5
 define gui.page_button_borders = Borders(15, 6, 15, 6)
 
 define gui.quick_button_borders = Borders(15, 6, 15, 0)
-define gui.quick_button_text_size = 21
+define gui.quick_button_text_size = 30
 define gui.quick_button_text_idle_color = gui.idle_small_color
 define gui.quick_button_text_selected_color = gui.accent_color
 

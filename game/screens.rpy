@@ -9,6 +9,7 @@ init offset = -1
 ## Gaya
 ################################################################################
 
+
 style default:
     properties gui.text_properties()
     language gui.language
@@ -270,7 +271,7 @@ style quick_button_text is button_text
 
 style quick_menu:
     xalign 0.5
-    yalign 1.0
+    yalign 0.975
 
 style quick_button:
     properties gui.button_properties("quick_button")
@@ -293,9 +294,13 @@ screen navigation():
     vbox:
         style_prefix "navigation"
 
-
-        xalign 0.5
-        yalign 0.8
+        if main_menu:
+            xalign 0.5
+            yalign 0.8
+        else:
+            xoffset 70
+            yalign 0.55
+        
 
         spacing gui.navigation_spacing
 
@@ -419,6 +424,7 @@ style main_menu_version:
 ## ini di maksudkan untuk di gunakan dengan cabang satu atau lebih, yang di
 ## tempatkan di dalamnya.
 
+
 screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
 
     style_prefix "game_menu"
@@ -528,12 +534,14 @@ style game_menu_side:
     spacing 15
 
 style game_menu_label:
-    xpos 75
+    ypos 0
+    xpos 100
     ysize 180
 
 style game_menu_label_text:
+    font "fonts/BoldPixels.ttf"
     size 75
-    color gui.accent_color
+    color '#000000'
     yalign 0.5
 
 style return_button:
@@ -942,8 +950,11 @@ define gui.history_allow_tags = { "alt", "noalt", "rt", "rb", "art" }
 style history_window is empty
 
 style history_name is gui_label
+style history_name is gui_label
 style history_name_text is gui_label_text
-style history_text is gui_text
+# style history_text is gui_text
+style history_text:
+    color '#000000'
 
 style history_label is gui_label
 style history_label_text is gui_label_text
