@@ -23,16 +23,22 @@
 # Deklarasikan gambar di bawah line ini, menggunakan pernyataan image.
 # cnth. image eileen happy = "eileen_happy.png"
 image bg blck = "images/blck.png"
-image bg makoto_normal = "images/b1_1_3.png"
-image bg makoto_no_suit = "images/b1_1_1.png"
-image bg Razaan = "images/Frame 1.png"
-image bg Haidar = "images/Haidar.png"
-image bg Djerico = "images/Frame 3.png"
 image bg landmark = "images/bg/landmark.png"
 image bg omori = "images/bg/omori.png"
+image bg class = "images/bg/f06_03a03.png"
 
 #pake kyk gini aja kak buat sprite
-image define bimo = "images/b1_1_1.png"
+# Sip sip
+image razan = "images/Frame 1.png"
+image firdi = "images/Frame 2.png"
+image djerico = "images/Frame 3.png"
+image andhika = "images/Frame 5.png"
+image bimo = "images/Frame 7.png"
+image haidar = "images/Frame 8.png"
+image ajik = "images/Frame 9.png"
+image lisya = "images/Frame 10.png"
+image titi = "images/Frame 11.png"
+image chia = "images/Frame 12.png"
 
 # Deklarasikan karakter yang digunakan di game.
 define bim = Character('BIMO', color="#ffffff", callback=cwo) #Karakter Bimo
@@ -50,17 +56,53 @@ define dje = Character('DJERICO', color="#ffffff", callback=cwo) #karakter Djeri
 label start:
     play music "OMORI OST - 003 Lost At A Sleepover.flac" loop fadein 1.0 fadeout 1.0
 
-    scene bg Razaan with dissolve
+    scene bg class with dissolve
+
+    show razan
     raz "hai gueh Razaan kortim kece."
+    hide razan
 
-    scene bg Haidar with dissolve
-    hai "Hai gueh haidar beredar"
+    show firdi
+    fir "Hai gueh firdi, bisa dipanggil pirid"
+    hide firdi
 
-    scene bg Djerico with dissolve
+    show djerico
     dje "Hai gueh djerico dari tekkim"
+    hide djerico
 
-    scene bg omori with dissolve
-    show b1_1_1
-    bim "hai gueh Bimo gueh suka OMORI.gueh Teknik Informatika angkatan '24."
-    lis "hai gueh lisya dari angkatan 26. Gueh sangat muda sampai angkatan gueh dibawah 25."
-    return
+    show andhika
+    dhi "Hello World"
+    hide andhika
+
+    show bimo
+    bim "Hello World"
+    hide bimo
+
+    show haidar
+    hai "Hello World"
+    hide haidar
+
+    show ajik
+    faj "Hello World"
+    hide ajik
+
+    show lisya
+    lis "Hello World"
+    hide lisya
+
+    show titi
+    nas "Hello World"
+    hide titi
+
+    show chia
+    chi "Hello World"
+    hide chia
+
+
+
+
+    # scene bg omori with dissolve
+    # show b1_1_1
+    # bim "hai gueh Bimo gueh suka OMORI.gueh Teknik Informatika angkatan '24."
+    # lis "hai gueh lisya dari angkatan 26. Gueh sangat muda sampai angkatan gueh dibawah 25."
+    # return
