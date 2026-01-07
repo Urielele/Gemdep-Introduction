@@ -110,7 +110,7 @@ screen say(who, what):
                 style "namebox"
                 text who id "who"
 
-        text what id "what" xmaximum 900
+        text what id "what" xmaximum 1500
 
 
     ## Jika ada gambar di sisi, tampilkan di atas text. Jangan tampilkan di

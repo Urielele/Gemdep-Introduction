@@ -48,7 +48,7 @@ define dje = Character('DJERICO', color="#ffffff", callback=cwo) #karakter Djeri
 
 # Game dimulai disini.
 label start:
-    play music "OMORI OST - 003 Lost At A Sleepover.flac" loop fadein 1.0
+    play music "OMORI OST - 003 Lost At A Sleepover.flac" loop fadein 1.0 fadeout 1.0
 
     scene bg Razaan with dissolve
     raz "hai gueh Razaan kortim kece."
@@ -61,7 +61,6 @@ label start:
 
     scene bg omori with dissolve
     show b1_1_1
-    bim "hai gueh Bimo gueh suka OMORI."
-    bim "gueh Teknik Informatika angkatan '24."
-    lis "hai gueh lisya dari angkatan 26."
+    bim "hai gueh Bimo gueh suka OMORI.gueh Teknik Informatika angkatan '24."
+    lis "hai gueh lisya dari angkatan 26. Gueh sangat muda sampai angkatan gueh dibawah 25."
     return
