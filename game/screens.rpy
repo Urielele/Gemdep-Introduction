@@ -101,6 +101,7 @@ screen say(who, what):
 
     window:
         id "window"
+        
 
         if who is not None:
 
@@ -109,7 +110,7 @@ screen say(who, what):
                 style "namebox"
                 text who id "who"
 
-        text what id "what"
+        text what id "what" xmaximum 900
 
 
     ## Jika ada gambar di sisi, tampilkan di atas text. Jangan tampilkan di

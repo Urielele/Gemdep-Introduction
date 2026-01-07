@@ -63,7 +63,7 @@ define config.has_voice = True
 ## dimainkan sampai permainan di mulai, sampai di hentikan atau file lain di
 ## mainkan.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
+define config.main_menu_music = "audio/toby fox - UNDERTALE Soundtrack - 15 sans..flac"
 
 
 ## Transisi ####################################################################
