@@ -48,8 +48,6 @@ image gimi_shock = "images/Gimi 5.png"
 # -------------------------------------------------------------------------
 # DEKLARASI KARAKTER
 # -------------------------------------------------------------------------
-# Note: Callback 'cwo' dan 'cwe' akan mentrigger suara Animalese dari speak.rpy
-
 define gim = Character('GIMI', color="#00ff00", callback=cwo) # Maskot (Hijau)
 define mc = Character('YOU', color="#aaaaaa", callback=cwo)   # Player (Abu-abu)
 
@@ -74,7 +72,7 @@ label start:
     # Scene 1: Intro Glitch
     scene bg blck with dissolve
     
-    # Efek suara glitch manual (opsional) atau teks sistem
+    # Efek suara glitch manual
     "System" "Booting up... GDGoC_Gemdep.exe loaded."
     
     scene bg class with dissolve
@@ -82,12 +80,14 @@ label start:
     # Scene 2: Gimi Muncul
     show gimi_chat_buka at center with moveinbottom
     gim "Yoo! Selamat datang, Player 1! Kamu sudah masuk ke server GDGoC Game Development Division."
-    hide gimi_chat_buka
     
     mc "Hah? Dimana ini?"
+    hide gimi_chat_buka
     
-    show gimi_happy_tunjuk
-    gim "Di Markas Game Dev! Timing login kamu pas banget."
+    # Intro Gimi (Revisi: Hapus bagian Broke Ass)
+    show gimi_happy_tunjuk at center
+    gim "Sebelumnya perkenalkan aku Gimi, maskot magang dari divisi game development."
+    gim "Di Markas Game Dev ini, timing login kamu pas banget."
     
     mc "Pas buat apa? Buat gacha?"
     hide gimi_happy_tunjuk
@@ -97,10 +97,11 @@ label start:
     gim "Buat kenalan sama Party Member kita tahun ini."
     hide gimi_chat_buka 
     
-    show gimi_happy_tunjuk
+    show gimi_happy_tunjuk at center
     gim "Oke, buka Party Menu. Hati-hati, build member di sini aneh-aneh!"
     hide gimi_happy_tunjuk with moveoutbottom
 
+    # Pindah Gimi ke KIRI (sesuai request animasi kamu)
     show gimi_happy_tunjuk at left with moveinbottom
 
     # ---------------------------------------------------------------------
@@ -114,7 +115,7 @@ label start:
     
     raz "It is what it is."
     gim "Pasrah banget ya..."
-    hide razan with dissolve
+    hide razan with moveoutbottom
 
     # --- 2. FIRDI ---
     show firdi at right with moveinbottom
@@ -122,7 +123,7 @@ label start:
     gim "Kalau bingung coding, tanya hatimu. Kalau masih bingung, tanya Firdi."
     
     fir "May your heart be your guiding key."
-    hide firdi with dissolve
+    hide firdi with moveoutbottom
 
     # --- 3. LISYA ---
     show lisya at right with moveinbottom
@@ -130,15 +131,15 @@ label start:
     gim "Sangat berguna kalau nyasar di Indralaya."
     
     lis "When nothing goes right, go left."
-    hide lisya with dissolve
+    hide lisya with moveoutbottom
 
     # --- 4. CHIA ---
     show chia at right with moveinbottom
-    gim "Nah, ini Chia (TI '23). Perhatiin sprite aku sekarang..."
-    gim "Yang gambar sprite aku ini tuh dia! Wibu Persona garis keras."
+    gim "Nah, ini Chia (TI '23). Perhatiin penampilan aku sekarang..."
+    gim "Yang gambar penampilan aku ini tuh dia! Wibu Persona & JOJO garis keras."
     
     chi "Yare yare da wa."
-    hide chia with dissolve
+    hide chia with moveoutbottom
 
     # --- 5. BIMO ---
     show bimo at right with moveinbottom
@@ -146,7 +147,7 @@ label start:
     gim "Quotes-nya dalem banget. Awas jangan ikut depresi."
     
     bim "If all I can do is believe... My God, My Universe."
-    hide bimo with dissolve
+    hide bimo with moveoutbottom
 
     # --- 6. AJIK ---
     show ajik at right with moveinbottom
@@ -154,7 +155,7 @@ label start:
     gim "Dia cuma takut sama satu hal..."
     
     faj "Respect everyone, Fear no one, Except Herobrine."
-    hide ajik with dissolve
+    hide ajik with moveoutbottom
 
     # --- 7. HAIDAR ---
     show haidar at right with moveinbottom
@@ -162,7 +163,7 @@ label start:
     gim "Motto-nya disponsori Nike."
     
     hai "Just Do It."
-    hide haidar with dissolve
+    hide haidar with moveoutbottom
 
     # --- 8. NASTITI ---
     show titi at right with moveinbottom
@@ -170,7 +171,7 @@ label start:
     gim "Member paling berbudaya dan puitis."
     
     nas "To exist is a fact, To live is an art."
-    hide titi with dissolve
+    hide titi with moveoutbottom
 
     # --- 9. ANDHIKA ---
     show andhika at right with moveinbottom
@@ -178,16 +179,18 @@ label start:
     gim "Sabar banget orangnya, soalnya udah biasa mati di game."
     
     dhi "Whatever happens, happens."
-    hide andhika with dissolve
+    hide andhika with moveoutbottom
 
     # --- 10. DJERICO ---
     show djerico at right with moveinbottom
     gim "TERAKHIR! Plot twist kita. Djerico!"
     gim "Satu-satunya ALCHEMIST (Teknik Kimia) di antara anak Komputer."
     
-    dje "Do your..."
-    gim "Kayaknya quotes-nya kepotong, tapi biarin lah biar misterius."
-    hide djerico with dissolve
+    # REVISI: Menggunakan Full Quote
+    dje "Do Your best, and God will do the rest."
+    
+    gim "Nah, mantap quotes-nya lengkap."
+    hide djerico with moveoutbottom
 
     hide gimi_happy_tunjuk with moveoutbottom
 
